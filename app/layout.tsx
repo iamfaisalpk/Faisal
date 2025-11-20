@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Mohammed Faisal Portfolio",
     images: [
       {
-        url: "/Faisal.png",
+        url: "/Faisal..png",
         width: 1200,
         height: 630,
         alt: "Mohammed Faisal Portfolio Banner",
@@ -49,10 +49,10 @@ export const metadata = {
     title: "Mohammed Faisal | MERN Stack Developer",
     description:
       "Official portfolio of Mohammed Faisal. MERN Stack Developer, React Developer, Node.js Developer.",
-    images: ["/Faisal.png"],
+    images: ["/Faisal..png"],
   },
   icons: {
-    icon: "/Faisal.png",
+    icon: "/Faisal..png",
   },
 };
 
