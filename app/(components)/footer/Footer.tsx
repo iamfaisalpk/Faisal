@@ -138,7 +138,7 @@ const Footer = () => {
                 >
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                         <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-                            © {new Date().getFullYear()} {PERSON.name}. A digital experience handcrafted by <span className="underline decoration-blue-500/50 underline-offset-4">Faisal.Faiy</span>
+                            © {new Date().getFullYear()} {PERSON.name}. A digital experience handcrafted by <span className="underline decoration-blue-500/50 underline-offset-4">Faisal.Faizy</span>
                         </p>
 
 
