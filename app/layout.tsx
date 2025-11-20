@@ -12,6 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://faisal-faizypk.vercel.app"),
+
   title: "Mohammed Faisal | MERN Stack Developer",
   description:
     "Hi, I'm Mohammed Faisal — a MERN Stack Developer specialized in React, Next.js, Node.js, MongoDB and modern web app development. Explore my projects, skills, and experience.",
@@ -28,11 +30,12 @@ export const metadata = {
   authors: [{ name: "Mohammed Faisal" }],
   creator: "Mohammed Faisal",
   publisher: "Mohammed Faisal",
+
   openGraph: {
     title: "Mohammed Faisal | MERN Stack Developer Portfolio",
     description:
       "Explore the official portfolio of Mohammed Faisal — MERN Stack Developer with expertise in React, Next.js, Node.js, Express, MongoDB.",
-    url: "http://faisal-gamma.vercel.app",
+    url: "https://faisal-faizypk.vercel.app",
     siteName: "Mohammed Faisal Portfolio",
     images: [
       {
@@ -44,6 +47,7 @@ export const metadata = {
     ],
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Mohammed Faisal | MERN Stack Developer",
@@ -51,10 +55,12 @@ export const metadata = {
       "Official portfolio of Mohammed Faisal. MERN Stack Developer, React Developer, Node.js Developer.",
     images: ["/Faisal.png"],
   },
+
   icons: {
     icon: "/Faisal.png",
   },
 };
+
 
 
 export default function RootLayout({
