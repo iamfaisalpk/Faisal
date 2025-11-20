@@ -230,7 +230,7 @@ const About = () => {
                                     className="relative w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800"
                                 >
                                     <Image
-                                        src="/Faisal1.png"
+                                        src="/Faisal.png"
                                         alt={PERSON.name}
                                         width={500}
                                         height={500}
