@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://faisal-faizypk.vercel.app"),
+  metadataBase: new URL("https://faisal-faizypk.vercel.app/"),
 
   title: "Mohammed Faisal | MERN Stack Developer",
   description:
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Mohammed Faisal | MERN Stack Developer Portfolio",
     description:
       "Explore the official portfolio of Mohammed Faisal — MERN Stack Developer with expertise in React, Next.js, Node.js, Express, MongoDB.",
-    url: "https://faisal-faizypk.vercel.app",
+    url: "https://faisal-faizypk.vercel.app/",
     siteName: "Mohammed Faisal Portfolio",
     images: [
       {
