@@ -1,8 +1,8 @@
 export const SITE = {
     title: "Mohammed Faisal — Full Stack Developer",
     description:
-        "Mohammed Faisal — Full Stack Developer & App Developer. MERN, Next.js, React Native/Flutter-ready. Seeking growth roles in Dubai.",
-    url: "https://your-portfolio-domain.vercel.app",
+        "Mohammed Faisal — Full Stack Developer & App Developer. MERN, Next.js, React Native/Flutter-ready expert.",
+    url: "https://faisal-faizypk.vercel.app/",
     author: "Mohammed Faisal",
 };
 
