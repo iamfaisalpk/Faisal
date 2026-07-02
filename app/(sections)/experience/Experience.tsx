@@ -5,25 +5,52 @@ import { Briefcase, Calendar, MapPin, Sparkles, TrendingUp, Award } from "lucide
 
 const experiences = [
     {
-        title: "Full Stack Developer",
-        company: "Techon-Innovation",
+        title: "Software Developer (Full-Stack)",
+        company: "Sharaco Technologies",
         location: "Kerala, India",
-        period: "2025 - Present",
+        period: "November 2025 - Present",
         duration: "Present",
         description:
-            "Working on cutting-edge software using Next.js, Node.js, and MongoDB. Currently leading the development of a modern Biometric Attendance System including device integration, user management, analytics dashboards, and real-time syncing.",
-        skills: ["Next.js", "React", "Node.js", "Express", "MongoDB", "Real-time Systems", "Redux"],
+            "Contributing to the development and enhancement of multiple production applications including FlowBee.io, booking.flowbee.io, and Kootaan CSM. Building and maintaining core business modules such as Dashboard, Booking Management, Calendar, Reports, User Management, and Chat. Developing reusable React-based frontend components, integrating REST APIs, resolving production issues, and collaborating with backend developers in an Agile product team to deliver reliable, production-ready software.",
+        skills: [
+            "React.js",
+            "Next.js",
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "REST APIs",
+            "MongoDB",
+            "PostgreSQL",
+            "Redux",
+            "Tailwind CSS",
+            "Agile"
+        ],
         current: true
     },
     {
-        title: "Full Stack Developer",
-        company: "Bridgeon Solutions",
+        title: "Full-Stack Developer",
+        company: "Bridgeon",
         location: "Kerala, India",
-        period: "2024 - 2025",
+        period: "October 2024 - October 2025",
         duration: "1 year",
         description:
-            "Developed multiple production-level applications including a real-time chat application using Socket.IO, a student learning/mentor platform (SkillMentorX), and internal tools. Worked across frontend, backend APIs, authentication, and performance optimization.",
-        skills: ["Next.js", "React", "Socket.IO", "Node.js", "Express", "REST APIs", "Redux"],
+            "Completed professional full-stack development training while contributing to real-world software projects. Built full-stack applications including an AI-powered learning platform and a real-time chat application. Developed responsive frontend applications, designed and implemented REST and GraphQL APIs, built backend services, implemented secure authentication, added real-time communication with Socket.IO, and integrated third-party services while following clean coding and Agile practices.",
+        skills: [
+            "React.js",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "PostgreSQL",
+            "GraphQL",
+            "Socket.IO",
+            "JWT",
+            "Joi",
+            "Cloudinary"
+        ],
         current: false
     }
 ];
@@ -47,7 +74,7 @@ const Experience = () => {
             x: 0,
             transition: {
                 duration: 0.6,
-                ease: [0.4, 0, 0.2, 1] as const 
+                ease: [0.4, 0, 0.2, 1] as const
             }
         }
     };
@@ -59,7 +86,7 @@ const Experience = () => {
             y: 0,
             transition: {
                 duration: 0.6,
-                ease: [0.4, 0, 0.2, 1] as const 
+                ease: [0.4, 0, 0.2, 1] as const
             }
         }
     };
