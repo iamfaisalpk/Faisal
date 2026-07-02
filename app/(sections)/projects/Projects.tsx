@@ -19,7 +19,7 @@ const PROJECTS = [
         title: "Real-time Chat App",
         short: "Socket.IO based real-time messaging with presence and media support.",
         tools: ["React", "Node.js","Express.js", "Socket.IO", "MongoDB","Cloudinary"],
-        link: "https://whats-app-frontend-nu.vercel.app/",
+        link: "https://pk-chat-frontend.vercel.app/",
         github: "https://github.com/iamfaisalpk/WhatsApp-Frontend",
         featured: false
     },
