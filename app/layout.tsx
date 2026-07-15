@@ -90,13 +90,17 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/Faisal.png",
-    shortcut: "/Faisal.png",
-    apple: "/Faisal.png",
+    icon: [
+      { url: "/Faisal.png", type: "image/png", sizes: "1024x1024" },
+      { url: "/Faisal.png", type: "image/png", sizes: "32x32" },
+      { url: "/Faisal.png", type: "image/png", sizes: "16x16" },
+    ],
+    shortcut: { url: "/Faisal.png", type: "image/png" },
+    apple: { url: "/Faisal.png", type: "image/png", sizes: "1024x1024" },
   },
 
   verification: {
-    google: "google-site-verification-placeholder", // User can replace this with actual token
+    google: "3ea8d18ab7825d8e",
   },
 };
 
