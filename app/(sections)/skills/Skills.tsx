@@ -1,54 +1,82 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, Code2, Database, Palette, Zap } from "lucide-react";
+import { Sparkles, Database, Palette, Zap, Smartphone, Users } from "lucide-react";
 
-// Mock data - replace with your actual import
-const SKILLS = [
-    // Frontend
-    "React.js",
-    "Next.js",
-    // "React Native",
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "TailwindCSS",
-    "Redux Toolkit",
-    "Framer Motion",
-
-    // Backend
-    "Express.js",
-    "MongoDB",
-    "RESTful APIs",
-    "Node.js",
-    "JWT Authentication",
-    "Multer",
-    "Cloudinary",
-
-    // Realtime + Systems
-    "Socket.IO (Real-time WebApps)",
-    "Caching & Optimizations",
-
-    // DevOps + Tools
-    "Git & GitHub",
-    "CI/CD Pipelines",
-    "Vercel ",
-    "Postman",
-
-    // App Development
-    "React Native",
-    "Mobile UI/UX",
-    "Push Notifications",
-
-    // AI + Integrations
-    "Google Gemini API",
-    "AI Chat Systems",
-
-    // Soft Skills
-    "Team Collaboration",
-    "Communication",
-    "Leadership",
-    "Problem Solving",
+const SKILL_CATEGORIES = [
+    {
+        name: "Frontend Development",
+        icon: Palette,
+        color: "from-pink-500 to-rose-500",
+        skills: [
+            "React.js",
+            "Next.js",
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "TailwindCSS",
+            "Redux Toolkit",
+            "Framer Motion",
+        ],
+    },
+    {
+        name: "Backend & Database",
+        icon: Database,
+        color: "from-purple-500 to-indigo-500",
+        skills: [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "PostgreSQL",
+            "RESTful APIs",
+            "JWT Authentication",
+            "Socket.IO (Real-time WebApps)",
+            "Multer",
+            "Cloudinary",
+        ],
+    },
+    {
+        name: "Mobile & AI",
+        icon: Smartphone,
+        color: "from-cyan-500 to-blue-500",
+        skills: [
+            "React Native",
+            "Mobile UI/UX",
+            "Push Notifications",
+            "Google Gemini API",
+            "AI Chat Systems",
+        ],
+    },
+    {
+        name: "DevOps & Tools",
+        icon: Zap,
+        color: "from-amber-500 to-orange-500",
+        skills: [
+            "Git & GitHub",
+            "Vercel",
+            "Render",
+            "Namecheap (DNS & Hosting)",
+            "Docker",
+            "CI/CD Pipelines",
+            "Postman",
+            "Nginx & PM2",
+        ],
+    },
+    {
+        name: "Soft Skills",
+        icon: Users,
+        color: "from-emerald-500 to-teal-500",
+        skills: [
+            "Team Collaboration",
+            "Communication",
+            "Leadership",
+            "Problem Solving",
+        ],
+    },
 ];
+
+const ALL_TECH_SKILLS = SKILL_CATEGORIES
+    .filter((cat) => cat.name !== "Soft Skills")
+    .flatMap((cat) => cat.skills);
 
 const Skills = () => {
     const containerVariants = {
@@ -57,9 +85,9 @@ const Skills = () => {
             opacity: 1,
             transition: {
                 staggerChildren: 0.05,
-                delayChildren: 0.2
-            }
-        }
+                delayChildren: 0.2,
+            },
+        },
     };
 
     const itemVariants = {
@@ -70,9 +98,9 @@ const Skills = () => {
             scale: 1,
             transition: {
                 duration: 0.5,
-                ease: "easeOut" as const
-            }
-        }
+                ease: "easeOut" as const,
+            },
+        },
     };
 
     const titleVariants = {
@@ -82,38 +110,12 @@ const Skills = () => {
             y: 0,
             transition: {
                 duration: 0.6,
-                ease: "easeOut" as const
-            }
-        }
+                ease: "easeOut" as const,
+            },
+        },
     };
 
-
-    const categories = [
-        {
-            name: "Frontend",
-            icon: Palette,
-            color: "from-pink-500 to-rose-500",
-            skills: SKILLS.slice(0, 4)
-        },
-        {
-            name: "Backend",
-            icon: Database,
-            color: "from-purple-500 to-indigo-500",
-            skills: SKILLS.slice(8, 12)
-        },
-        {
-            name: "Styling",
-            icon: Code2,
-            color: "from-blue-500 to-cyan-500",
-            skills: SKILLS.slice(4, 8)
-        },
-        {
-            name: "Tools",
-            icon: Zap,
-            color: "from-amber-500 to-orange-500",
-            skills: SKILLS.slice(12)
-        }
-    ];
+    const categories = SKILL_CATEGORIES;
 
     return (
         <section
@@ -218,7 +220,7 @@ const Skills = () => {
                     </h3>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                        {SKILLS.map((skill, index) => (
+                        {ALL_TECH_SKILLS.map((skill, index) => (
                             <motion.div
                                 key={index}
                                 variants={itemVariants}

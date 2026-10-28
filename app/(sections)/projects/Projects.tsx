@@ -4,35 +4,103 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ExternalLink, Github, Sparkles, ArrowRight, Code2 } from "lucide-react";
 
-const PROJECTS = [
+
+export const PROJECTS = [
+    {
+        id: "flowbee",
+        title: "FlowBee.io — WhatsApp Automation Platform",
+        short:
+            "Professional product development experience at Sharaco Technologies, contributing to feature development, bug fixing, troubleshooting, and application maintenance.",
+        tools: ["React.js", "REST APIs"],
+        link: "https://flowbee.io/",
+        github: "",
+        featured: true,
+    },
+    {
+        id: "flowbee-booking",
+        title: "FlowBee Booking — Booking Management System",
+        short:
+            "Booking management platform featuring dashboards, calendar management, reports, and user management, with ongoing feature development and production issue resolution.",
+        tools: ["React.js", "Tailwind CSS", "REST APIs"],
+        link: "https://booking.flowbee.io/",
+        github: "",
+        featured: true,
+    },
+    {
+        id: "kootaan-csm",
+        title: "Kootaan CSM — Customer Success Management",
+        short:
+            "Customer success management product involving feature updates, application troubleshooting, bug fixes, and ongoing product maintenance.",
+        tools: ["React.js", "Tailwind CSS", "REST APIs"],
+        link: "https://kootaan.com/",
+        github: "",
+        featured: true,
+    },
+    {
+        id: "meat-delivery",
+        title: "Al Azima Meat Delivery App",
+        short:
+            "Meat delivery application with administrative workflows and API-integrated functionality, supporting product and order-related operations.",
+        tools: ["React.js", "Tailwind CSS", "REST APIs"],
+        link: "",
+        github: "",
+        featured: true,
+    },
     {
         id: "skillmentorx",
         title: "SkillMentorX — Learning & Mentorship Platform",
-        short: "AI-assisted learning platform for students & mentors. Multi-role dashboards, scheduling and gamification.",
-        tools: ["Next.js", "Node.js", "Express.js","MongoDB", "Socket.IO","gemini api key", "Cloudinary"],
+        short:
+            "AI-assisted learning and mentorship platform with multi-role dashboards, scheduling, real-time communication, and gamification features.",
+        tools: [
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.IO",
+            "Gemini API",
+            "Cloudinary",
+        ],
         link: "https://skill-mento-x-frontend.vercel.app/",
         github: "https://github.com/iamfaisalpk/SkillMentoX-Frontend",
-        featured: true 
+        featured: true,
     },
     {
         id: "chat-app",
         title: "Real-time Chat App",
-        short: "Socket.IO based real-time messaging with presence and media support.",
-        tools: ["React", "Node.js","Express.js", "Socket.IO", "MongoDB","Cloudinary"],
+        short:
+            "Real-time messaging application with Socket.IO-powered communication, user presence, and media sharing capabilities.",
+        tools: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Socket.IO",
+            "MongoDB",
+            "Cloudinary",
+        ],
         link: "https://pk-chat-frontend.vercel.app/",
         github: "https://github.com/iamfaisalpk/WhatsApp-Frontend",
-        featured: false
+        featured: false,
     },
     {
         id: "biometric-system",
         title: "Biometric System Software",
-        short: "Attendance & access control integrated with biometric devices.",
-        tools: ["Next.js", "Node.js", "Express.js","Socket.IO", "MongoDB", "Cloudinary"],
+        short:
+            "Attendance and access-control software designed to integrate with biometric devices for employee attendance tracking and management.",
+        tools: [
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "Socket.IO",
+            "MongoDB",
+            "Cloudinary",
+        ],
         link: "https://github.com/iamfaisalpk/Tec-Metric",
         github: "https://github.com/iamfaisalpk/Tec-Metric",
-        featured: true
+        featured: true,
     },
 ];
+
+
 
 const Projects = () => {
     const containerVariants = {
@@ -153,18 +221,18 @@ const Projects = () => {
                             )}
                             {/* Card */}
                             <div className="relative h-full bg-white dark:bg-gray-800 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
-                            
+
                                 {/* linear Overlay */}
                                 <div className="absolute inset-0 bg-linear-to-br from-blue-500/5 via-transparent to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 {/* Content */}
                                 <div className="relative p-6 space-y-4">
-                                
+
                                     {/* Project Icon */}
                                     <div className="flex items-center justify-between">
                                         <div className="p-3 bg-linear-to-br from-blue-500 to-indigo-600 rounded-xl shadow-md">
                                             <Code2 className="w-6 h-6 text-white" />
                                         </div>
-                                    
+
                                         {/* Links */}
                                         <div className="flex items-center space-x-2">
                                             {project.github && (

@@ -7,8 +7,8 @@ import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 
 const PERSON = {
     name: "Mohammed Faisal",
-    role: "Full Stack Developer / App Developer",
-    experience: "1 year experience in Full-Stack & App Development",
+    role: "Software Developer",
+    experience: "2+ year experience in Software Development",
     phone: "+91 7994010513",
     email: "iamfaizy123@gmail.com",
 };

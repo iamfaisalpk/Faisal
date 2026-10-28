@@ -36,6 +36,7 @@ export const SKILLS = [
     "Node.js",
     "Express.js",
     "MongoDB",
+    "PostgreSQL",
     "RESTful APIs",
     "JWT Authentication",
     "Multer",
@@ -47,9 +48,13 @@ export const SKILLS = [
 
     // DevOps + Tools
     "Git & GitHub",
+    "Vercel",
+    "Render",
+    "Namecheap (DNS & Hosting)",
+    "Docker",
     "CI/CD Pipelines",
-    "Vercel ",
     "Postman",
+    "Nginx & PM2",
 
     // App Development
     "React Native",

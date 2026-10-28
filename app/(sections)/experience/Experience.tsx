@@ -32,8 +32,8 @@ const experiences = [
         title: "Full-Stack Developer",
         company: "Bridgeon",
         location: "Kerala, India",
-        period: "October 2024 - October 2025",
-        duration: "1 year",
+        period: "September 2024 - October 2025",
+        duration: "1.2 year",
         description:
             "Completed professional full-stack development training while contributing to real-world software projects. Built full-stack applications including an AI-powered learning platform and a real-time chat application. Developed responsive frontend applications, designed and implemented REST and GraphQL APIs, built backend services, implemented secure authentication, added real-time communication with Socket.IO, and integrated third-party services while following clean coding and Agile practices.",
         skills: [
@@ -273,9 +273,9 @@ const Experience = () => {
                     className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6"
                 >
                     {[
-                        { label: "Years Experience", value: "1+", icon: TrendingUp },
+                        { label: "Years Experience", value: "2+", icon: TrendingUp },
                         { label: "Companies", value: "2", icon: Briefcase },
-                        { label: "Projects Built", value: "3+", icon: Award }
+                        { label: "Projects Built", value: "4+", icon: Award }
                     ].map((stat, index) => (
                         <motion.div
                             key={index}
